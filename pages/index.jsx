@@ -15,7 +15,7 @@ const Home = () => {
 
 		console.log("fetching NFTs...");
 
-		const api_key = "WvjrzSqR4EeHhlbmHsC7h1_LpBo5A74t";
+		const api_key = process.env.NEXT_PUBLIC_ALCHEMY_API_KEY;
 		const baseURL = `https://eth-rinkeby.alchemyapi.io/v2/${api_key}/getNFTs/`;
 
 		if (!collection.length) {
